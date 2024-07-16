@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EquityHeartbeats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="EquityHeartbeats Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Beating Strong for Equity and Support</h1>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>EquityHeartbeats is dedicated to fostering equity and support for all individuals. We believe in a world where everyone has the opportunity to thrive.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+</body>
+</html>
