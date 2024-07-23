@@ -3,37 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EquityHeartbeats</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>EquityHeartBeats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #6a5acd;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .logo {
+            max-width: 150px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .mission {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #6a5acd;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .social-links {
+            list-style: none;
+            padding: 0;
+        }
+        .social-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="logo.png" alt="EquityHeartbeats Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Programs</a></li>
-                    <li><a href="#">Get Involved</a></li>
-                    <li><a href="#">Donate</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section class="hero">
-        <div class="container">
-            <h1>Beating Strong for Equity and Support</h1>
-            <a href="#" class="btn">Learn More</a>
-        </div>
-    </section>
-    <section class="about-us">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>EquityHeartbeats is dedicated to fostering equity and support for all individuals. We believe in a world where everyone has the opportunity to thrive.</p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
+
+<header>
+    <img src="IMG_7793.png" alt="EquityHeartBeats Logo" class="logo">
+    <h1>EquityHeartBeats</h1>
+</header>
+
+<div class="container">
+    <div class="mission">
+        <h2>Our Mission</h2>
+        <p>Our mission is to bridge the gaps in healthcare by providing access to essential resources, education, and advocacy. Together, we can make a difference, one beat at a time.</p>
+        <h3>Join us as we work towards a healthier and more equitable future for all.</h3>
+    </div>
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:equityheartbeats@gmail.com">equityheartbeats@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/equityheartbeats" target="_blank">@equityheartbeats</a></p>
+    </div>
+</div>
+
+<footer>
+    <ul class="social-links">
+        <li><a href="mailto:equityheartbeats@gmail.com">Email</a></li>
+        <li><a href="https://instagram.com/equityheartbeats" target="_blank">Instagram</a></li>
+    </ul>
+    <p>&copy; 2024 EquityHeartBeats. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
