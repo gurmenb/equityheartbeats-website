@@ -14,7 +14,7 @@
             color: #333;
         }
         header {
-            background-color: #6a5acd;
+            background-color: #9370db;
             color: #fff;
             text-align: center;
             padding: 20px 0;
@@ -23,12 +23,27 @@
             max-width: 150px;
             margin-bottom: 10px;
         }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #9370db;
+        }
+        .navbar a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #6a5acd;
+            color: white;
+        }
         .container {
             width: 90%;
             margin: 0 auto;
             padding: 20px 0;
         }
-        .mission {
+        .mission, .stats {
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
@@ -36,11 +51,11 @@
             margin-bottom: 20px;
             text-align: center;
         }
-        .mission h2 {
+        .mission h2, .stats h2 {
             margin-top: 0;
         }
         footer {
-            background-color: #6a5acd;
+            background-color: #9370db;
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -63,11 +78,22 @@
             font-size: 1.2em;
         }
         .contact a {
-            color: #6a5acd;
+            color: #9370db;
             text-decoration: none;
         }
         .contact a:hover {
             text-decoration: underline;
+        }
+        .stats .stat {
+            display: inline-block;
+            width: 30%;
+            margin: 10px 0;
+        }
+        .stats .stat h3 {
+            margin: 0;
+        }
+        .stats .stat p {
+            margin: 5px 0 0;
         }
     </style>
 </head>
@@ -78,13 +104,36 @@
     <h1>EquityHeartBeats</h1>
 </header>
 
+<nav class="navbar">
+    <a href="#about">About Us</a>
+    <a href="#volunteer">Volunteer</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#donate">Donate</a>
+</nav>
+
 <div class="container">
-    <div class="mission">
+    <div class="mission" id="about">
         <h2>Our Mission</h2>
         <p>Our mission is to bridge the gaps in healthcare by providing access to essential resources, education, and advocacy. Together, we can make a difference, one beat at a time.</p>
         <h3>Join us as we work towards a healthier and more equitable future for all.</h3>
     </div>
-    <div class="contact">
+    <div class="stats">
+        <h2>Our Impact</h2>
+        <div class="stat">
+            <h3>1,000+</h3>
+            <p>Volunteers</p>
+        </div>
+        <div class="stat">
+            <h3>500+</h3>
+            <p>Events Hosted</p>
+        </div>
+        <div class="stat">
+            <h3>10,000+</h3>
+            <p>Lives Impacted</p>
+        </div>
+    </div>
+    <div class="contact" id="contact">
         <h2>Contact Us</h2>
         <p>Email: <a href="mailto:equityheartbeats@gmail.com">equityheartbeats@gmail.com</a></p>
         <p>Instagram: <a href="https://instagram.com/equityheartbeats" target="_blank">@equityheartbeats</a></p>
@@ -105,4 +154,3 @@
 
 </body>
 </html>
-
