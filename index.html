@@ -84,25 +84,6 @@
         }
         .programs .program {
             margin: 20px 0;
-            text-align: left;
-        }
-        .programs .program img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-        .programs .program p {
-            margin: 10px 0;
-        }
-        .programs .program a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #6b21a8;
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        .programs .program a:hover {
-            background-color: #a78bfa;
         }
         .newsletter input[type="email"] {
             padding: 10px;
@@ -144,6 +125,19 @@
             color: #fff;
             text-decoration: none;
             font-size: 1.2em;
+        }
+        .btn-more-info {
+            background-color: #6b21a8;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .btn-more-info:hover {
+            background-color: #a78bfa;
         }
     </style>
 </head>
@@ -196,22 +190,46 @@
     <div class="section programs" id="volunteer">
         <h2>Our Programs</h2>
         <div class="program">
-            <img src="path-to-image1.jpg" alt="Health Education Workshops">
             <h3>Health Education Workshops</h3>
             <p>Empowering communities with knowledge and resources to take charge of their health.</p>
-            <a href="more-information-link1.html">More Information</a>
         </div>
         <div class="program">
-            <img src="path-to-image2.jpg" alt="Community Health Clinics">
             <h3>Community Health Clinics</h3>
             <p>Providing accessible healthcare services to underserved communities.</p>
-            <a href="more-information-link2.html">More Information</a>
         </div>
         <div class="program">
-            <img src="path-to-image3.jpg" alt="Advocacy and Policy">
             <h3>Advocacy and Policy</h3>
             <p>Working towards systemic change through policy advocacy and community organizing.</p>
-            <a href="more-information-link3.html">More Information</a>
+        </div>
+    </div>
+    <div class="section" id="events">
+        <h2>Upcoming Events</h2>
+        <div class="event">
+            <h3>Community Health Fair</h3>
+            <p>Date: August 15, 2024</p>
+            <p>Location: Central Park, Main City</p>
+            <button class="btn-more-info" onclick="showMoreInfo('event1')">More Information</button>
+            <div id="event1" class="more-info" style="display:none;">
+                <p>Join us for a day of health screenings, educational workshops, and fun activities for the whole family. Meet local health professionals and learn about the resources available in your community.</p>
+            </div>
+        </div>
+        <div class="event">
+            <h3>Health Education Workshop</h3>
+            <p>Date: September 10, 2024</p>
+            <p>Location: Community Center, South District</p>
+            <button class="btn-more-info" onclick="showMoreInfo('event2')">More Information</button>
+            <div id="event2" class="more-info" style="display:none;">
+                <p>Our health education workshop will cover topics such as nutrition, mental health, and preventive care. Participants will receive valuable information and resources to help them lead healthier lives.</p>
+            </div>
+        </div>
+        <div class="event">
+            <h3>Advocacy Training Session</h3>
+            <p>Date: October 5, 2024</p>
+            <p>Location: Online Webinar</p>
+            <button class="btn-more-info" onclick="showMoreInfo('event3')">More Information</button>
+            <div id="event3" class="more-info" style="display:none;">
+                <p>Learn how to effectively advocate for health equity in your community. This training session will provide you with the tools and knowledge needed to engage with policymakers and drive positive change.</p>
+            </div>
         </div>
     </div>
     <div class="section newsletter">
@@ -219,26 +237,4 @@
         <p>Sign up for our newsletter to receive updates on our programs, events, and more.</p>
         <form>
             <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
-    <div class="section contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:equityheartbeats@gmail.com">equityheartbeats@gmail.com</a></p>
-        <p>Instagram: <a href="https://instagram.com/equityheartbeats" target="_blank">@equityheartbeats</a></p>
-    </div>
-</div>
-
-<footer>
-    <ul class="social-links">
-        <li><a href="mailto:equityheartbeats@gmail.com">Email</a></li>
-        <li><a href="https://instagram.com/equityheartbeats" target="_blank">Instagram</a></li>
-    </ul>
-    <p>&copy; 2024 EquityHeartBeats. All rights reserved.</p>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
+            <button type="submit">Subscribe
