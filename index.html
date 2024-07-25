@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EquityHeartBeats</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
@@ -17,7 +18,7 @@
             background-color: #9370db;
             color: #fff;
             text-align: center;
-            padding: 20px 0;
+            padding: 30px 0;
         }
         .logo {
             max-width: 150px;
@@ -26,16 +27,18 @@
         .navbar {
             display: flex;
             justify-content: center;
-            background-color: #9370db;
+            background-color: #6a5acd;
+            padding: 10px 0;
         }
         .navbar a {
             color: #fff;
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
+            font-weight: 600;
         }
         .navbar a:hover {
-            background-color: #6a5acd;
+            background-color: #9370db;
             color: white;
         }
         .container {
@@ -43,7 +46,7 @@
             margin: 0 auto;
             padding: 20px 0;
         }
-        .mission, .stats {
+        .mission, .stats, .values, .programs, .newsletter, .contact {
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
@@ -51,11 +54,12 @@
             margin-bottom: 20px;
             text-align: center;
         }
-        .mission h2, .stats h2 {
+        .mission h2, .stats h2, .values h2, .programs h2, .newsletter h2, .contact h2 {
             margin-top: 0;
+            font-family: 'Roboto', sans-serif;
         }
         footer {
-            background-color: #9370db;
+            background-color: #6a5acd;
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -91,9 +95,39 @@
         }
         .stats .stat h3 {
             margin: 0;
+            font-size: 2em;
+            color: #6a5acd;
         }
         .stats .stat p {
             margin: 5px 0 0;
+        }
+        .values ul {
+            list-style: none;
+            padding: 0;
+        }
+        .values li {
+            margin: 10px 0;
+            font-weight: 600;
+        }
+        .programs .program {
+            margin: 20px 0;
+        }
+        .newsletter input[type="email"] {
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #6a5acd;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .newsletter button:hover {
+            background-color: #9370db;
         }
     </style>
 </head>
@@ -132,6 +166,39 @@
             <h3>10,000+</h3>
             <p>Lives Impacted</p>
         </div>
+    </div>
+    <div class="values">
+        <h2>Our Values</h2>
+        <ul>
+            <li>Inclusivity</li>
+            <li>Empathy</li>
+            <li>Transparency</li>
+            <li>Innovation</li>
+            <li>Sustainability</li>
+        </ul>
+    </div>
+    <div class="programs" id="volunteer">
+        <h2>Our Programs</h2>
+        <div class="program">
+            <h3>Health Education Workshops</h3>
+            <p>Empowering communities with knowledge and resources to take charge of their health.</p>
+        </div>
+        <div class="program">
+            <h3>Community Health Clinics</h3>
+            <p>Providing accessible healthcare services to underserved communities.</p>
+        </div>
+        <div class="program">
+            <h3>Advocacy and Policy</h3>
+            <p>Working towards systemic change through policy advocacy and community organizing.</p>
+        </div>
+    </div>
+    <div class="newsletter">
+        <h2>Stay Informed</h2>
+        <p>Sign up for our newsletter to receive updates on our programs, events, and more.</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
     </div>
     <div class="contact" id="contact">
         <h2>Contact Us</h2>
