@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EquityHeartBeats</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lobster&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lobster&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -25,13 +25,14 @@
             margin-bottom: 10px;
         }
         h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 3.5em;
+            font-family: 'Lobster', cursive;
+            font-size: 3em;
             margin: 0;
         }
         nav {
             background-color: #f3e8ff;
             padding: 10px 0;
+            text-align: center;
         }
         nav a {
             color: #6b21a8;
@@ -49,22 +50,23 @@
             padding: 20px 0;
         }
         .section {
-            background-color: #fff;
+            background-color: #f9f9f9;
             padding: 40px 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             margin-bottom: 40px;
-            text-align: center;
         }
         .section h2 {
             margin-top: 0;
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
         }
+        .section p {
+            font-size: 1.1em;
+        }
         .stats .stat {
             display: inline-block;
             width: 30%;
             margin: 20px 0;
+            text-align: center;
         }
         .stats .stat h3 {
             margin: 0;
@@ -139,26 +141,7 @@
         .btn-more-info:hover {
             background-color: #a78bfa;
         }
-        .img-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .img-container img {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        }
     </style>
-    <script>
-        function showMoreInfo(id) {
-            var x = document.getElementById(id);
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
 </head>
 <body>
 
@@ -167,7 +150,7 @@
     <h1>EquityHeartBeats</h1>
 </header>
 
-<nav class="navbar justify-content-center">
+<nav>
     <a href="#about">About Us</a>
     <a href="#volunteer">Volunteer</a>
     <a href="#events">Events</a>
@@ -181,11 +164,6 @@
         <p>Our mission is to bridge the gaps in healthcare by providing access to essential resources, education, and advocacy. Together, we can make a difference, one beat at a time.</p>
         <h3>Join us as we work towards a healthier and more equitable future for all.</h3>
     </div>
-
-    <div class="img-container">
-        <img src="https://via.placeholder.com/800x400" alt="Community Health">
-    </div>
-
     <div class="section stats">
         <h2>Our Impact</h2>
         <div class="stat">
@@ -201,7 +179,6 @@
             <p>Lives Impacted</p>
         </div>
     </div>
-
     <div class="section values">
         <h2>Our Values</h2>
         <ul>
@@ -212,11 +189,6 @@
             <li>Sustainability</li>
         </ul>
     </div>
-
-    <div class="img-container">
-        <img src="https://via.placeholder.com/800x400" alt="Healthcare Services">
-    </div>
-
     <div class="section programs" id="volunteer">
         <h2>Our Programs</h2>
         <div class="program">
@@ -232,11 +204,6 @@
             <p>Working towards systemic change through policy advocacy and community organizing.</p>
         </div>
     </div>
-
-    <div class="img-container">
-        <img src="https://via.placeholder.com/800x400" alt="Community Event">
-    </div>
-
     <div class="section" id="events">
         <h2>Upcoming Events</h2>
         <div class="event">
@@ -254,28 +221,49 @@
             <p>Location: Community Center, South District</p>
             <button class="btn-more-info" onclick="showMoreInfo('event2')">More Information</button>
             <div id="event2" class="more-info" style="display:none;">
-                <p>Our health education workshop will cover topics such as nutrition, mental health, and preventive care. Participants will have the opportunity to ask questions and engage in discussions with health experts.</p>
+                <p>Our health education workshop will cover topics such as nutrition, mental health, and preventive care. Participants will receive valuable information and resources to help them lead healthier lives.</p>
+            </div>
+        </div>
+        <div class="event">
+            <h3>Advocacy Training Session</h3>
+            <p>Date: October 5, 2024</p>
+            <p>Location: Online Webinar</p>
+            <button class="btn-more-info" onclick="showMoreInfo('event3')">More Information</button>
+            <div id="event3" class="more-info" style="display:none;">
+                <p>Learn how to effectively advocate for health equity in your community. This training session will provide you with the tools and knowledge needed to engage with policymakers and drive positive change.</p>
             </div>
         </div>
     </div>
-
-    <div class="section newsletter" id="contact">
-        <h2>Subscribe to Our Newsletter</h2>
-        <p>Stay updated on our latest programs, events, and news.</p>
-        <input type="email" placeholder="Enter your email">
-        <button>Subscribe</button>
+    <div class="section newsletter">
+        <h2>Stay Informed</h2>
+        <p>Sign up for our newsletter to receive updates on our programs, events, and more.</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
     </div>
 </div>
 
 <footer>
     <p>&copy; 2024 EquityHeartBeats. All rights reserved.</p>
     <ul class="social-links">
-        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
     </ul>
 </footer>
 
+<script>
+    function showMoreInfo(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "none") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>
+
 </body>
 </html>
+
