@@ -50,23 +50,22 @@
             padding: 20px 0;
         }
         .section {
-            background-color: #f9f9f9;
+            background-color: #fff;
             padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             margin-bottom: 40px;
+            text-align: center;
         }
         .section h2 {
             margin-top: 0;
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
         }
-        .section p {
-            font-size: 1.1em;
-        }
         .stats .stat {
             display: inline-block;
             width: 30%;
             margin: 20px 0;
-            text-align: center;
         }
         .stats .stat h3 {
             margin: 0;
@@ -141,7 +140,28 @@
         .btn-more-info:hover {
             background-color: #a78bfa;
         }
+        .team .member {
+            text-align: center;
+            margin: 20px;
+        }
+        .team .member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
     </style>
+    <script>
+        function showMoreInfo(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -150,10 +170,11 @@
     <h1>EquityHeartBeats</h1>
 </header>
 
-<nav>
+<nav class="navbar justify-content-center">
     <a href="#about">About Us</a>
     <a href="#volunteer">Volunteer</a>
     <a href="#events">Events</a>
+    <a href="#team">Our Team</a>
     <a href="#contact">Contact Us</a>
     <a href="#donate">Donate</a>
 </nav>
@@ -227,43 +248,51 @@
         <div class="event">
             <h3>Advocacy Training Session</h3>
             <p>Date: October 5, 2024</p>
-            <p>Location: Online Webinar</p>
+            <p>Location: Online (Zoom)</p>
             <button class="btn-more-info" onclick="showMoreInfo('event3')">More Information</button>
             <div id="event3" class="more-info" style="display:none;">
-                <p>Learn how to effectively advocate for health equity in your community. This training session will provide you with the tools and knowledge needed to engage with policymakers and drive positive change.</p>
+                <p>Learn how to advocate for health equity in your community. This training session will provide you with the skills and knowledge needed to effectively engage in policy advocacy and community organizing.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section team" id="team">
+        <h2>Our Team</h2>
+        <div class="row">
+            <div class="col-md-4 member">
+                <img src="team1.jpg" alt="Team Member 1">
+                <h4>Armaan Singh Bahia</h4>
+                <p>Founder & Executive Director</p>
+            </div>
+            <div class="col-md-4 member">
+                <img src="team2.jpg" alt="Team Member 2">
+                <h4>Jane Doe</h4>
+                <p>Program Manager</p>
+            </div>
+            <div class="col-md-4 member">
+                <img src="team3.jpg" alt="Team Member 3">
+                <h4>John Smith</h4>
+                <p>Community Outreach Coordinator</p>
             </div>
         </div>
     </div>
     <div class="section newsletter">
-        <h2>Stay Informed</h2>
-        <p>Sign up for our newsletter to receive updates on our programs, events, and more.</p>
-        <form>
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </form>
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter to stay updated on our latest news and events.</p>
+        <input type="email" placeholder="Enter your email address">
+        <button>Subscribe</button>
     </div>
 </div>
 
 <footer>
     <p>&copy; 2024 EquityHeartBeats. All rights reserved.</p>
     <ul class="social-links">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
+        <li><a href="https://www.instagram.com/equityheartbeats" target="_blank">Instagram</a></li>
+        <li><a href="mailto:equityheartbeats@gmail.com">Email</a></li>
     </ul>
 </footer>
 
-<script>
-    function showMoreInfo(id) {
-        var element = document.getElementById(id);
-        if (element.style.display === "none") {
-            element.style.display = "block";
-        } else {
-            element.style.display = "none";
-        }
-    }
-</script>
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
