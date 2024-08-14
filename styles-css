@@ -14,10 +14,22 @@ header {
     background-color: #6a5acd;
     padding: 20px 0;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .logo img {
     max-width: 150px;
+}
+
+.nav-toggle {
+    display: none;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
 
 nav {
@@ -28,10 +40,10 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin-left: 20px;
 }
 
@@ -103,56 +115,26 @@ nav ul li a {
     color: #555;
 }
 
-.footer {
-    background-color: #6a5acd;
-    color: #fff;
-    padding: 10px 0;
+.newsletter {
+    padding: 50px 0;
     text-align: center;
 }
 
-.footer .social-links {
-    list-style: none;
-    padding: 0;
+.newsletter form {
+    display: flex;
+    justify-content: center;
 }
 
-.footer .social-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.footer .social-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-/* Base styles for mobile menu */
-.nav-toggle {
-    display: none;
-    background-color: #6a5acd;
-    color: white;
-    border: none;
+.newsletter input[type="email"] {
     padding: 10px;
-    cursor: pointer;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #6a5acd;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-    }
-
-    nav ul.open {
-        display: flex;
-    }
-
-    .nav-toggle {
-        display: block;
-    }
-}
+.newsletter button {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+   
