@@ -5,6 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
@@ -14,7 +15,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #7a4b92; /* Calming purple */
+    background-color: #6a1b9a; /* Calming and refined purple */
     padding: 20px 0;
     color: #fff;
     position: relative;
@@ -26,7 +27,7 @@ header .logo img {
 
 .nav-toggle {
     display: none;
-    background-color: #7a4b92;
+    background-color: #6a1b9a;
     color: white;
     border: none;
     padding: 10px;
@@ -83,21 +84,21 @@ nav ul li a {
     display: inline-block;
 }
 
-/* Section Styles */
-section {
+/* About Us Section */
+.about-us {
+    background-color: #f0f0f0;
     padding: 50px 0;
+    text-align: center;
 }
 
-section h2 {
+.about-us h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    text-align: center;
 }
 
-section p {
+.about-us p {
     font-size: 1.2em;
     color: #555;
-    text-align: center;
 }
 
 /* Impact Stats Section */
@@ -109,12 +110,13 @@ section p {
 .impact-stats .stats {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .impact-stats .stat {
     flex: 1;
     padding: 20px;
-    background-color: #f4f4f4;
+    background: #fff;
     border-radius: 10px;
     margin: 10px;
 }
@@ -127,6 +129,13 @@ section p {
 /* Health Inequity Section */
 .health-inequity {
     background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.health-inequity h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .health-inequity ul {
@@ -140,29 +149,88 @@ section p {
 /* Volunteer Section */
 .volunteer {
     background-color: #e0e0e0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.volunteer h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 /* Events Section */
 .events {
     background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.events h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Recent Events Section */
+.recent-events {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.recent-events h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 600px;
+}
+
+.event h3 {
+    margin-top: 0;
 }
 
 /* Contact Section */
 .contact {
     background-color: #e0e0e0;
+    padding: 50px 0;
     text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 /* Donate Section */
 .donate {
     background-color: #f9f9f9;
+    padding: 50px 0;
     text-align: center;
+}
+
+.donate h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 /* Newsletter Signup Section */
 .newsletter {
-    background-color: #7a4b92; /* Calming purple */
+    background-color: #9c27b0; /* Refined soothing purple */
     color: white;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .newsletter form {
@@ -176,6 +244,7 @@ section p {
     border-radius: 5px;
     border: none;
     margin-right: 10px;
+    font-size: 1em;
 }
 
 .newsletter button {
@@ -190,7 +259,7 @@ section p {
 
 /* Footer Styles */
 footer {
-    background-color: #7a4b92; /* Calming purple */
+    background-color: #9c27b0; /* Refined soothing purple */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -217,7 +286,7 @@ footer {
     nav ul {
         display: none;
         flex-direction: column;
-        background-color: #7a4b92; /* Calming purple */
+        background-color: #9c27b0; /* Refined soothing purple */
         position: absolute;
         top: 60px;
         right: 0;
