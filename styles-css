@@ -125,3 +125,34 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.2em;
 }
+
+/* Base styles for mobile menu */
+.nav-toggle {
+    display: none;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #6a5acd;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
