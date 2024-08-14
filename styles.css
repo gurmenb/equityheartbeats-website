@@ -6,16 +6,18 @@ body {
     box-sizing: border-box;
     color: #333;
     line-height: 1.6;
+    background-color: #f3f3f3; /* Light background for overall layout */
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 /* Header Styles */
 header {
-    background-color: #6a1b9a; /* Calming and refined purple */
+    background-color: #870eaa; /* Dark Purple */
     padding: 20px 0;
     color: #fff;
     position: relative;
@@ -27,7 +29,7 @@ header .logo img {
 
 .nav-toggle {
     display: none;
-    background-color: #6a1b9a;
+    background-color: #870eaa; /* Dark Purple */
     color: white;
     border: none;
     padding: 10px;
@@ -61,11 +63,12 @@ nav ul li a {
     background: url('images/hero-background.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 100px 20px;
+    background-color: #cb6ce6; /* Lavender background for contrast */
 }
 
 .hero-content h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin: 0;
 }
 
@@ -86,8 +89,8 @@ nav ul li a {
 
 /* About Us Section */
 .about-us {
-    background-color: #f0f0f0;
-    padding: 50px 0;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -103,8 +106,9 @@ nav ul li a {
 
 /* Impact Stats Section */
 .impact-stats {
-    padding: 50px 0;
+    padding: 50px 20px;
     text-align: center;
+    background-color: #cb6ce6; /* Lavender */
 }
 
 .impact-stats .stats {
@@ -129,7 +133,7 @@ nav ul li a {
 /* Health Inequity Section */
 .health-inequity {
     background-color: #f9f9f9;
-    padding: 50px 0;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -149,7 +153,7 @@ nav ul li a {
 /* Volunteer Section */
 .volunteer {
     background-color: #e0e0e0;
-    padding: 50px 0;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -161,7 +165,7 @@ nav ul li a {
 /* Events Section */
 .events {
     background-color: #f4f4f4;
-    padding: 50px 0;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -173,7 +177,7 @@ nav ul li a {
 /* Recent Events Section */
 .recent-events {
     background-color: #ffffff;
-    padding: 50px 0;
+    padding: 50px 20px;
 }
 
 .recent-events h2 {
@@ -204,7 +208,7 @@ nav ul li a {
 /* Contact Section */
 .contact {
     background-color: #e0e0e0;
-    padding: 50px 0;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -216,7 +220,7 @@ nav ul li a {
 /* Donate Section */
 .donate {
     background-color: #f9f9f9;
-    padding: 50px 0;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -227,9 +231,9 @@ nav ul li a {
 
 /* Newsletter Signup Section */
 .newsletter {
-    background-color: #9c27b0; /* Refined soothing purple */
+    background-color: #870eaa; /* Dark Purple */
     color: white;
-    padding: 50px 0;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -259,9 +263,9 @@ nav ul li a {
 
 /* Footer Styles */
 footer {
-    background-color: #9c27b0; /* Refined soothing purple */
+    background-color: #870eaa; /* Dark Purple */
     color: #fff;
-    padding: 10px 0;
+    padding: 10px 20px;
     text-align: center;
 }
 
@@ -286,7 +290,7 @@ footer {
     nav ul {
         display: none;
         flex-direction: column;
-        background-color: #9c27b0; /* Refined soothing purple */
+        background-color: #870eaa; /* Dark Purple */
         position: absolute;
         top: 60px;
         right: 0;
