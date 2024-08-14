@@ -78,6 +78,11 @@ nav ul li a {
     margin-bottom: 0.5em;
 }
 
+.hero-content h2 {
+    font-size: 2rem; /* Slightly smaller than h1 */
+    margin: 0;
+}
+
 .hero-content p {
     font-size: 1.5em;
 }
