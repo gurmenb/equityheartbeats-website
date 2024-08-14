@@ -1,40 +1,38 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a, button, input {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333;
-    line-height: 1.6;
-    background-color: #f3f3f3; /* Light background for overall layout */
 }
 
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Container */
 .container {
     width: 90%;
-    margin: 0 auto;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Header Styles */
+/* Header */
 header {
-    background-color: #870eaa; /* Dark Purple */
-    padding: 20px 0;
+    background-color: #870eaa;
+    padding: 20px;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
 }
 
 header .logo img {
     max-width: 150px;
-}
-
-.nav-toggle {
-    display: none;
-    background-color: #870eaa; /* Dark Purple */
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 1.2em;
 }
 
 nav {
@@ -58,18 +56,26 @@ nav ul li a {
     font-weight: bold;
 }
 
+.nav-toggle {
+    display: none;
+    background-color: #870eaa;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
 /* Hero Section */
 .hero {
     background: url('images/hero-background.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 100px 20px;
-    background-color: #cb6ce6; /* Lavender background for contrast */
+    padding: 100px 0;
 }
 
 .hero-content h1 {
-    font-size: 3.5em;
-    margin: 0;
+    font-size: 3em;
+    margin-bottom: 0.5em;
 }
 
 .hero-content p {
@@ -77,7 +83,7 @@ nav ul li a {
 }
 
 .cta-button {
-    background-color: #e91e63;
+    background-color: #cb6ce6;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -87,42 +93,24 @@ nav ul li a {
     display: inline-block;
 }
 
-/* About Us Section */
-.about-us {
-    background-color: #f4f4f4;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.about-us h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.about-us p {
-    font-size: 1.2em;
-    color: #555;
-}
-
 /* Impact Stats Section */
 .impact-stats {
-    padding: 50px 20px;
+    padding: 50px 0;
+    background-color: #e6d8f5;
     text-align: center;
-    background-color: #cb6ce6; /* Lavender */
 }
 
 .impact-stats .stats {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .impact-stats .stat {
     flex: 1;
     padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    margin: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .impact-stats h2 {
@@ -130,156 +118,82 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-/* Health Inequity Section */
-.health-inequity {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
+/* Section Styles */
+section {
+    padding: 50px 0;
+}
+
+.about-us, .volunteer, .events, .contact, .donate, .newsletter, .recent-events {
+    background-color: #f9f5ff;
     text-align: center;
 }
 
-.health-inequity h2 {
+.about-us h2, .volunteer h2, .events h2, .contact h2, .donate h2, .newsletter h2, .recent-events h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-.health-inequity ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    text-align: left;
-    margin: 0 auto;
-    max-width: 800px;
+.about-us p, .volunteer p, .events p, .contact p, .donate p, .newsletter p {
+    font-size: 1.2em;
+    color: #555;
 }
 
-/* Volunteer Section */
-.volunteer {
-    background-color: #e0e0e0;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.volunteer h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-/* Events Section */
-.events {
-    background-color: #f4f4f4;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.events h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-/* Recent Events Section */
-.recent-events {
-    background-color: #ffffff;
-    padding: 50px 20px;
-}
-
-.recent-events h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.event-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.event {
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px 0;
-    width: 80%;
-    max-width: 600px;
-}
-
-.event h3 {
-    margin-top: 0;
-}
-
-/* Contact Section */
-.contact {
-    background-color: #e0e0e0;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-/* Donate Section */
-.donate {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.donate h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-/* Newsletter Signup Section */
-.newsletter {
-    background-color: #870eaa; /* Dark Purple */
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
+/* Newsletter Signup */
 .newsletter form {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 10px;
 }
 
 .newsletter input[type="email"] {
     padding: 10px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    border: none;
-    margin-right: 10px;
-    font-size: 1em;
 }
 
 .newsletter button {
     padding: 10px 20px;
+    background-color: #cb6ce6;
+    color: white;
     border: none;
     border-radius: 5px;
-    background-color: #e91e63;
-    color: white;
-    font-size: 1em;
     cursor: pointer;
 }
 
-/* Footer Styles */
+/* Recent Events Section */
+.recent-events .event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recent-events .event {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
 footer {
-    background-color: #870eaa; /* Dark Purple */
+    background-color: #870eaa;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
-.footer .social-links {
+footer .social-links {
     list-style: none;
     padding: 0;
+    margin: 20px 0;
 }
 
-.footer .social-links li {
+footer .social-links li {
     display: inline;
     margin: 0 10px;
 }
 
-.footer .social-links a {
+footer .social-links a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
@@ -290,7 +204,7 @@ footer {
     nav ul {
         display: none;
         flex-direction: column;
-        background-color: #870eaa; /* Dark Purple */
+        background-color: #870eaa;
         position: absolute;
         top: 60px;
         right: 0;
