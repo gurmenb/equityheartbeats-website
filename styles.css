@@ -73,18 +73,32 @@ nav ul li a {
     padding: 100px 0;
 }
 
+/* Set background color for h1, h2, p */
+.hero-content h1,
+.hero-content h2,
+.hero-content p {
+    background-color: rgba(203, 108, 230, 0.8); /* Light purple with some transparency */
+    padding: 10px; /* Optional padding around the text */
+    border-radius: 5px; /* Optional rounded corners */
+    display: inline-block; /* Shrinks background to fit text */
+}
+
+/* Hero Section Content */
 .hero-content h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
+    padding: 10px;
 }
 
 .hero-content h2 {
     font-size: 2rem; /* Slightly smaller than h1 */
     margin: 0;
+    padding: 8px;
 }
 
 .hero-content p {
     font-size: 1.5em;
+    padding: 6px;
 }
 
 .cta-button {
