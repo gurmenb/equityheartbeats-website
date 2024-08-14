@@ -11,14 +11,13 @@ body {
 }
 
 header {
-    background-color: #f8f8f8;
+    background-color: #6a5acd;
     padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    color: #fff;
 }
 
-.logo {
+header .logo img {
     max-width: 150px;
-    display: inline-block;
 }
 
 nav {
@@ -38,22 +37,27 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
+    font-weight: bold;
 }
 
 .hero {
-    background: url('hero-background.jpg') no-repeat center center/cover;
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 100px 0;
 }
 
-.hero h1 {
+.hero-content h1 {
     font-size: 3em;
     margin: 0;
 }
 
-.hero .btn {
+.hero-content p {
+    font-size: 1.5em;
+}
+
+.cta-button {
     background-color: #e91e63;
     color: white;
     padding: 10px 20px;
@@ -61,6 +65,27 @@ nav ul li a {
     border-radius: 5px;
     font-size: 1.2em;
     margin-top: 20px;
+    display: inline-block;
+}
+
+.impact-stats {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.impact-stats .stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.impact-stats .stat {
+    flex: 1;
+    padding: 20px;
+}
+
+.impact-stats h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .about-us {
@@ -78,12 +103,25 @@ nav ul li a {
     color: #555;
 }
 
-.about-us .btn {
-    background-color: #e91e63;
-    color: white;
-    padding: 10px 20px;
+.footer {
+    background-color: #6a5acd;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer .social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer .social-links a {
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px;
     font-size: 1.2em;
-    margin-top: 20px;
 }
