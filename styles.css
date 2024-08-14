@@ -137,4 +137,62 @@ nav ul li a {
     background-color: #e91e63;
     color: white;
     padding: 10px 20px;
-   
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #6a5acd;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer .social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Base styles for mobile menu */
+.nav-toggle {
+    display: none;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #6a5acd;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
