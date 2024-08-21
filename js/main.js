@@ -1,12 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile menu toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('nav ul');
-
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('show');
-    });
-
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
