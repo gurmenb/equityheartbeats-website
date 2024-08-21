@@ -1,3 +1,12 @@
+body {
+    background-color: #f0e6ff; /* Light purple background */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -28,6 +37,8 @@ header .container {
 nav ul {
     display: flex;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
