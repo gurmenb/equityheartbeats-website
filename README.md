@@ -43,7 +43,7 @@ If you'd like to contribute to the development of this website, please follow th
 5. Open a Pull Request
 
 ## Contact
-For any questions or concerns, please contact [Your Contact Information].
+For any questions or concerns, please contact equityheartbeats@gmail.com.
 
 ## License
-[Include your license information here, if applicable]
+@ Equityheartbeats 2024
