@@ -1,0 +1,21 @@
+/* Donate Section */
+.donate {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #e6d8f5;
+}
+
+.donate h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.donate .cta-button {
+    margin-top: 20px;
+    background-color: #cb6ce6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
