@@ -1,5 +1,5 @@
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-background.jpg');
+    background-image: linear-gradient(rgba(135, 14, 170, 0.7), rgba(135, 14, 170, 0.7)), url('../images/hero-background.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -33,15 +33,63 @@
     padding: 15px 30px;
 }
 
+.intro {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.intro h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #870eaa;
+}
+
+.intro p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+}
+
+.key-points {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.point {
+    flex-basis: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.point i {
+    font-size: 3rem;
+    color: #870eaa;
+    margin-bottom: 15px;
+}
+
+.point h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #870eaa;
+}
+
+.point p {
+    font-size: 1rem;
+}
+
 .impact {
     padding: 80px 0;
-    background-color: #f9f9f9;
+    background-color: #f0e6ff;
 }
 
 .impact h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
+    color: #870eaa;
 }
 
 .impact-stats {
@@ -53,17 +101,27 @@
 .stat {
     text-align: center;
     margin: 20px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
 }
 
 .stat i {
     font-size: 3rem;
     color: #870eaa;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .stat h3 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: #870eaa;
 }
 
 .stat p {
@@ -84,6 +142,14 @@
         font-size: 1rem;
     }
 
+    .key-points {
+        flex-direction: column;
+    }
+    
+    .point {
+        flex-basis: 100%;
+    }
+    
     .impact-stats {
         flex-direction: column;
     }
