@@ -18,76 +18,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Form validation for newsletter signup
-    const newsletterForm = document.querySelector('#newsletter-form');
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            const emailInput = this.querySelector('input[type="email"]');
-            if (validateEmail(emailInput.value)) {
-                // Here you would typically send the form data to your server
-                alert('Thank you for subscribing!');
-                this.reset();
-            } else {
-                alert('Please enter a valid email address.');
+    // Add animation to stats when they come into view
+    const stats = document.querySelectorAll('.stat');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
             }
         });
-    }
+    }, { threshold: 0.5 });
 
-    // Form validation for contact form
-    const contactForm = document.querySelector('#contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            const nameInput = this.querySelector('#name');
-            const emailInput = this.querySelector('#email');
-            const messageInput = this.querySelector('#message');
-
-            if (nameInput.value && validateEmail(emailInput.value) && messageInput.value) {
-                // Here you would typically send the form data to your server
-                alert('Thank you for your message. We will get back to you soon!');
-                this.reset();
-            } else {
-                alert('Please fill out all fields correctly.');
-            }
-        });
-    }
-
-    // Helper function to validate email
-    function validateEmail(email) {
-        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
-    }
-
-    // Lazy loading for images
-    if ('IntersectionObserver' in window) {
-        const imgOptions = {
-            threshold: 0,
-            rootMargin: "0px 0px 300px 0px"
-        };
-
-        const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) {
-                    return;
-                } else {
-                    preloadImage(entry.target);
-                    imgObserver.unobserve(entry.target);
-                }
-            });
-        }, imgOptions);
-
-        const imgs = document.querySelectorAll('img[data-src]');
-        imgs.forEach(img => {
-            imgObserver.observe(img);
-        });
-    }
-
-    function preloadImage(img) {
-        const src = img.getAttribute('data-src');
-        if (!src) {
-            return;
-        }
-        img.src = src;
-    }
+    stats.forEach(stat => {
+        observer.observe(stat);
+    });
 });
