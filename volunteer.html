@@ -1,68 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Volunteer - EquityHeartBeats</title>
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/volunteer.css">
-  <link rel="stylesheet" href="css/footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer with EquityHeartBeats - Make a Difference</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/volunteer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <img src="images/logo.png" alt="EquityHeartBeats Logo">
-      </div>
-      <button class="nav-toggle">Menu</button>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="volunteer.html">Volunteer</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="donate.html">Donate</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
 
-  <section id="volunteer" class="volunteer">
-    <div class="container">
-      <h1>Volunteer</h1>
-      <p>Join our mission to promote health equity in our communities. Discover how you can contribute and make a difference.</p>
-      <div class="volunteer-opportunities">
-        <div class="opportunity">
-          <h3>Event Organizer</h3>
-          <p>Help plan and execute our community events.</p>
-          <a href="contact.html" class="cta-button">Learn More</a>
-        </div>
-        <div class="opportunity">
-          <h3>Outreach Coordinator</h3>
-          <p>Engage with local organizations and spread awareness.</p>
-          <a href="contact.html" class="cta-button">Learn More</a>
-        </div>
-        <div class="opportunity">
-          <h3>Health Educator</h3>
-          <p>Provide educational workshops and resources.</p>
-          <a href="contact.html" class="cta-button">Learn More</a>
-        </div>
-      </div>
-      <a href="contact.html" class="cta-button">Apply to Volunteer</a>
-    </div>
-  </section>
+    <main>
+        <section class="hero volunteer-hero">
+            <div class="container">
+                <h1>Volunteer with EquityHeartBeats</h1>
+                <p>Join our mission to promote health equity and make a lasting impact in communities worldwide.</p>
+            </div>
+        </section>
 
-  <footer>
-    <div class="container">
-      <ul class="social-links">
-        <li><a href="mailto:equityheartbeats@gmail.com">Email</a></li>
-        <li><a href="https://instagram.com/equityheartbeats" target="_blank">Instagram</a></li>
-      </ul>
-      <p>&copy; 2024 EquityHeartBeats. All Rights Reserved.</p>
-    </div>
-  </footer>
+        <section class="volunteer-appreciation">
+            <div class="container">
+                <h2>Our Volunteers: The Heart of Our Mission</h2>
+                <p>At EquityHeartBeats, our volunteers are the lifeblood of our organization. Your dedication, passion, and hard work drive our mission forward and touch countless lives. Whether you're a healthcare professional, a student, or simply someone who cares about health equity, there's a place for you in our family of volunteers.</p>
+                <div class="volunteer-stats">
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <h3>10,000+</h3>
+                        <p>Volunteer Hours</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-globe-americas"></i>
+                        <h3>20+</h3>
+                        <p>Countries Impacted</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>500+</h3>
+                        <p>Active Volunteers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <script src="js/main.js"></script>
+        <section class="committees">
+            <div class="container">
+                <h2>Our Committees</h2>
+                <p>Explore our six dynamic committees and find where your skills and passion can make the biggest impact:</p>
+                <div class="committee-grid">
+                    <div class="committee-card" id="outreach">
+                        <h3>Outreach Committee</h3>
+                        <p>Connect with communities and spread awareness about health equity.</p>
+                        <ul>
+                            <li>Organize community events</li>
+                            <li>Manage social media campaigns</li>
+                            <li>Develop partnerships with local organizations</li>
+                        </ul>
+                        <a href="#volunteer-form" class="button" data-committee="Outreach">Join This Committee</a>
+                    </div>
+                    <div class="committee-card" id="education">
+                        <h3>Education Committee</h3>
+                        <p>Develop and deliver educational programs on critical health topics.</p>
+                        <ul>
+                            <li>Create health education materials</li>
+                            <li>Conduct workshops and training sessions</li>
+                            <li>Develop curriculum for schools and community centers</li>
+                        </ul>
+                        <a href="#volunteer-form" class="button" data-committee="Education">Join This Committee</a>
+                    </div>
+                    <div class="committee-card" id="events">
+                        <h3>Events Committee</h3>
+                        <p>Plan and execute impactful events to promote health equity.</p>
+                        <ul>
+                            <li>Organize health fairs and screenings</li>
+                            <li>Coordinate fundraising events</li>
+                            <li>Manage logistics for community gatherings</li>
+                        </ul>
+                        <a href="#volunteer-form" class="button" data-committee="Events">Join This Committee</a>
+                    </div>
+                    <div class="committee-card" id="research">
+                        <h3>Research Committee</h3>
+                        <p>Conduct and analyze research to inform our health equity initiatives.</p>
+                        <ul>
+                            <li>Gather and analyze health data</li>
+                            <li>Conduct community needs assessments</li>
+                            <li>Publish reports on health equity issues</li>
+                        </ul>
+                        <a href="#volunteer-form" class="button" data-committee="Research">Join This Committee</a>
+                    </div>
+                    <div class="committee-card" id="advocacy">
+                        <h3>Advocacy Committee</h3>
+                        <p>Advocate for policies that promote health equity at local and national levels.</p>
+                        <ul>
+                            <li>Engage with policymakers</li>
+                            <li>Organize advocacy campaigns</li>
+                            <li>Develop policy briefs and recommendations</li>
+                        </ul>
+                        <a href="#volunteer-form" class="button" data-committee="Advocacy">Join This Committee</a>
+                    </div>
+                    <div class="committee-card" id="tech">
+                        <h3>Technology Committee</h3>
+                        <p>Leverage technology to advance our mission and improve our operations.</p>
+                        <ul>
+                            <li>Develop and maintain our website and apps</li>
+                            <li>Implement data management systems</li>
+                            <li>Explore innovative tech solutions for health equity</li>
+                        </ul>
+                        <a href="#volunteer-form" class="button" data-committee="Technology">Join This Committee</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="volunteer-form" class="volunteer-signup">
+            <div class="container">
+                <h2>Join Our Volunteer Team</h2>
+                <p>Ready to make a difference? Fill out the form below to get started on your volunteer journey with EquityHeartBeats.</p>
+                <form id="volunteerForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="committee">Preferred Committee</label>
+                        <select id="committee" name="committee" required>
+                            <option value="">Select a committee</option>
+                            <option value="Outreach">Outreach Committee</option>
+                            <option value="Education">Education Committee</option>
+                            <option value="Events">Events Committee</option>
+                            <option value="Research">Research Committee</option>
+                            <option value="Advocacy">Advocacy Committee</option>
+                            <option value="Technology">Technology Committee</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Skills & Experience</label>
+                        <textarea id="skills" name="skills" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="availability">Availability</label>
+                        <select id="availability" name="availability" required>
+                            <option value="">Select your availability</option>
+                            <option value="Weekdays">Weekdays</option>
+                            <option value="Weekends">Weekends</option>
+                            <option value="Both">Both Weekdays and Weekends</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="button">Submit Application</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="volunteer-testimonials">
+            <div class="container">
+                <h2>Volunteer Testimonials</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <p>"Volunteering with EquityHeartBeats has been one of the most rewarding experiences of my life. I've learned so much and met amazing people while making a real difference in my community."</p>
+                        - Sarah J., Education Committee
+                    </div>
+                    <div class="testimonial">
+                        <p>"As a member of the Advocacy Committee, I've had the opportunity to shape policies that will improve health outcomes for generations to come. It's incredibly fulfilling work."</p>
+                        - Michael T., Advocacy Committee
+                    </div>
+                    <div class="testimonial">
+                        <p>"The Technology Committee allowed me to use my skills in a meaningful way. We're leveraging cutting-edge tech to address health inequities, and it's exciting to be part of that change."</p>
+                        - Aisha R., Technology Committee
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/volunteer.js"></script>
 </body>
 </html>
