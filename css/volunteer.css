@@ -1,0 +1,16 @@
+/* Volunteer Section */
+.volunteer {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.volunteer .cta-button {
+    margin-top: 20px;
+    background-color: #cb6ce6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
