@@ -1,25 +1,35 @@
-/* css/header.css */
+/* css/hero.css */
 
-header {
-    background-color: #6A0DAD; /* Purple background */
-    padding: 10px 20px; /* Adjust padding */
+.hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-
-header .logo {
-    font-size: 1.5em; /* Larger font size */
-    color: white; /* White text */
-}
-
-header nav a {
-    margin: 0 15px; /* Adjust margin between links */
+    height: 80vh; /* Full viewport height */
+    background: linear-gradient(to right, #6A0DAD, #8A2BE2); /* Gradient background */
     color: white;
-    text-decoration: none;
-    font-weight: bold;
+    text-align: center;
 }
 
-header nav a:hover {
-    text-decoration: underline; /* Hover effect */
+.hero h1 {
+    font-size: 2.5em; /* Larger heading */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em; /* Subheading */
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #BB86FC; /* Light purple button */
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #8A2BE2; /* Darken on hover */
 }
