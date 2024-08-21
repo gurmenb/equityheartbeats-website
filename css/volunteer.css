@@ -1,16 +1,227 @@
-/* Volunteer Section */
-.volunteer {
-    padding: 50px 0;
+/* volunteer.css */
+
+/* Hero Section */
+.volunteer-hero {
+    background-image: linear-gradient(rgba(98, 0, 234, 0.8), rgba(98, 0, 234, 0.8)), url('../images/volunteer-hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
     text-align: center;
+    padding: 100px 0;
+}
+
+.volunteer-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.volunteer-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Volunteer Appreciation Section */
+.volunteer-appreciation {
+    background-color: #f0e6ff;
+    padding: 80px 0;
+}
+
+.volunteer-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.volunteer-stats .stat {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.volunteer-stats .stat:hover {
+    transform: translateY(-5px);
+}
+
+.volunteer-stats .stat i {
+    font-size: 2.5rem;
+    color: #6200ea;
+    margin-bottom: 10px;
+}
+
+.volunteer-stats .stat h3 {
+    font-size: 2rem;
+    color: #6200ea;
+    margin-bottom: 5px;
+}
+
+/* Committees Section */
+.committees {
+    padding: 80px 0;
+}
+
+.committee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.committee-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.committee-card:hover {
+    transform: translateY(-5px);
+}
+
+.committee-card h3 {
+    color: #6200ea;
+    margin-bottom: 15px;
+}
+
+.committee-card ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.committee-card ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.committee-card ul li::before {
+    content: '\2022';
+    color: #6200ea;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.committee-card .button {
+    display: inline-block;
+    background-color: #6200ea;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.committee-card .button:hover {
+    background-color: #3700b3;
+}
+
+/* Volunteer Sign-up Form */
+.volunteer-signup {
+    background-color: #f0e6ff;
+    padding: 80px 0;
+}
+
+#volunteerForm {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+#volunteerForm .button {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#volunteerForm .button:hover {
+    background-color: #3700b3;
+}
+
+/* Testimonials Section */
+.volunteer-testimonials {
+    padding: 80px 0;
     background-color: #fff;
 }
 
-.volunteer .cta-button {
-    margin-top: 20px;
-    background-color: #cb6ce6;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
+.testimonial-slider {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial {
+    padding: 20px;
+}
+
+.testimonial p {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.testimonial cite {
+    font-weight: bold;
+    color: #6200ea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .volunteer-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .volunteer-stats {
+        flex-direction: column;
+    }
+
+    .volunteer-stats .stat {
+        margin-bottom: 20px;
+    }
+
+    .committee-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #volunteerForm {
+        padding: 20px;
+    }
 }
