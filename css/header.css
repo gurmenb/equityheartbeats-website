@@ -1,65 +1,25 @@
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* css/header.css */
 
-/* Header styles */
 header {
-    background-color: #870eaa;
-    padding: 20px;
-    color: white;
+    background-color: #6A0DAD; /* Purple background */
+    padding: 10px 20px; /* Adjust padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
-header .logo img {
-    max-width: 150px;
+header .logo {
+    font-size: 1.5em; /* Larger font size */
+    color: white; /* White text */
 }
 
-nav {
-    display: flex;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
+header nav a {
+    margin: 0 15px; /* Adjust margin between links */
+    color: white;
     text-decoration: none;
-    color: #fff;
     font-weight: bold;
 }
 
-.nav-toggle {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        background-color: #870eaa;
-        right: 0;
-        top: 60px;
-        width: 100%;
-    }
-
-    nav ul.open {
-        display: flex;
-    }
-
-    .nav-toggle {
-        display: block;
-    }
+header nav a:hover {
+    text-decoration: underline; /* Hover effect */
 }
