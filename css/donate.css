@@ -1,21 +1,222 @@
-/* Donate Section */
-.donate {
-    padding: 50px 0;
+/* donate.css */
+
+/* Hero Section */
+.donate-hero {
+    background-image: linear-gradient(rgba(98, 0, 234, 0.8), rgba(98, 0, 234, 0.8)), url('../images/donate-hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
     text-align: center;
-    background-color: #e6d8f5;
+    padding: 100px 0;
 }
 
-.donate h2 {
-    font-size: 2.5em;
+.donate-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.donate-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Donor Appreciation Section */
+.donor-appreciation {
+    padding: 80px 0;
+    background-color: #f0e6ff;
+}
+
+.donor-appreciation h2 {
+    color: #6200ea;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.donor-appreciation p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.donor-appreciation ul {
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.donor-appreciation li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.donor-appreciation li::before {
+    content: '\2022';
+    color: #6200ea;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+/* Donation Options Section */
+.donation-options {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.donation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.donation-card {
+    background-color: #f0e6ff;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.donation-card:hover {
+    transform: translateY(-5px);
+}
+
+.donation-card i {
+    font-size: 3rem;
+    color: #6200ea;
+    margin-bottom: 20px;
+}
+
+.donation-card h3 {
+    color: #6200ea;
+    margin-bottom: 15px;
+}
+
+.donation-card p {
+    margin-bottom: 20px;
+}
+
+.donation-card .button {
+    display: inline-block;
+    background-color: #6200ea;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.donation-card .button:hover {
+    background-color: #3700b3;
+}
+
+/* Donation Form Section */
+.donation-form {
+    padding: 80px 0;
+    background-color: #f0e6ff;
+}
+
+#donateForm {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
     color: #333;
 }
 
-.donate .cta-button {
-    margin-top: 20px;
-    background-color: #cb6ce6;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+#donateForm .button {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#donateForm .button:hover {
+    background-color: #3700b3;
+}
+
+/* Impact Stories Section */
+.impact-stories {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.story-slider {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.story {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.story.animate {
+    opacity: 1;
+}
+
+.story img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.story h3 {
+    color: #6200ea;
+    margin-bottom: 10px;
+}
+
+.story p {
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donate-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .donation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #donateForm {
+        padding: 20px;
+    }
 }
