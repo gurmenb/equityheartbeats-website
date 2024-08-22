@@ -1,74 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Upcoming Events - EquityHeartBeats</title>
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/events.css">
-  <link rel="stylesheet" href="css/footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EquityHeartBeats Events - Join Us in Making a Difference</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <img src="images/logo.png" alt="EquityHeartBeats Logo">
-      </div>
-      <button class="nav-toggle">Menu</button>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="volunteer.html">Volunteer</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="donate.html">Donate</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
 
-  <section id="events" class="events">
-    <div class="container">
-      <h1>Upcoming Events</h1>
-      <div class="event-list">
-        <!-- Example Upcoming Event -->
-        <div class="event">
-          <h2>Health Fair</h2>
-          <p>Date: September 10, 2024</p>
-          <p>Join us for a day of health screenings and wellness activities.</p>
-          <a href="contact.html" class="cta-button">Learn More</a>
-        </div>
-        <!-- More events can be added here -->
-      </div>
-    </div>
-  </section>
+    <main>
+        <section class="hero events-hero">
+            <div class="container">
+                <h1>EquityHeartBeats Events</h1>
+                <p>Join us in our mission to promote health equity through engaging and impactful events.</p>
+            </div>
+        </section>
 
-  <section id="past-events" class="past-events">
-    <div class="container">
-      <h1>Past Events</h1>
-      <div class="event-list">
-        <!-- Example Past Event -->
-        <div class="event">
-          <h2>Community Health Workshop</h2>
-          <p>Date: August 15, 2024</p>
-          <p>Details about the workshop and its impact.</p>
-        </div>
-        <!-- More past events can be added here -->
-      </div>
-    </div>
-  </section>
+        <section class="upcoming-events">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <div class="event-grid">
+                    <div class="event-card">
+                        <img src="images/health-fair.jpg" alt="Community Health Fair">
+                        <div class="event-details">
+                            <h3>Community Health Fair</h3>
+                            <p class="event-date"><i class="fas fa-calendar-alt"></i> September 15, 2024</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Central Park, New York City</p>
+                            <p class="event-description">Join us for a day of free health screenings, educational workshops, and fun activities for the whole family. Learn about various health topics, get your vitals checked, and connect with local healthcare providers.</p>
+                            <a href="#rsvp-form" class="button rsvp-button" data-event="Community Health Fair">RSVP Now</a>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="images/health-equity-seminar.jpg" alt="Health Equity Seminar">
+                        <div class="event-details">
+                            <h3>Health Equity Seminar</h3>
+                            <p class="event-date"><i class="fas fa-calendar-alt"></i> October 5, 2024</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Virtual Event</p>
+                            <p class="event-description">Attend our virtual seminar featuring expert speakers discussing current challenges and innovative solutions in health equity. Network with professionals and gain insights into making a difference in your community.</p>
+                            <a href="#rsvp-form" class="button rsvp-button" data-event="Health Equity Seminar">RSVP Now</a>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="images/fundraising-gala.jpg" alt="Annual Fundraising Gala">
+                        <div class="event-details">
+                            <h3>Annual Fundraising Gala</h3>
+                            <p class="event-date"><i class="fas fa-calendar-alt"></i> November 20, 2024</p>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> Grand Ballroom, Hilton Hotel, Chicago</p>
+                            <p class="event-description">Join us for an elegant evening of dining, entertainment, and inspiration. All proceeds will support our ongoing health equity initiatives. Dress code: Black tie optional.</p>
+                            <a href="#rsvp-form" class="button rsvp-button" data-event="Annual Fundraising Gala">RSVP Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <footer>
-    <div class="container">
-      <ul class="social-links">
-        <li><a href="mailto:equityheartbeats@gmail.com">Email</a></li>
-        <li><a href="https://instagram.com/equityheartbeats" target="_blank">Instagram</a></li>
-      </ul>
-      <p>&copy; 2024 EquityHeartBeats. All Rights Reserved.</p>
-    </div>
-  </footer>
+        <section id="rsvp-form" class="rsvp-section">
+            <div class="container">
+                <h2>RSVP for an Event</h2>
+                <form id="rsvpForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event">Select Event</label>
+                        <select id="event" name="event" required>
+                            <option value="">Choose an event</option>
+                            <option value="Community Health Fair">Community Health Fair</option>
+                            <option value="Health Equity Seminar">Health Equity Seminar</option>
+                            <option value="Annual Fundraising Gala">Annual Fundraising Gala</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <input type="number" id="guests" name="guests" min="1" max="5" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Additional Comments</label>
+                        <textarea id="comments" name="comments" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="button">Submit RSVP</button>
+                </form>
+            </div>
+        </section>
 
-  <script src="js/main.js"></script>
+        <section class="past-events">
+            <div class="container">
+                <h2>Past Events</h2>
+                <div class="event-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Health Equity Workshop</h3>
+                            <p class="event-date">July 10, 2024</p>
+                            <p>A successful workshop bringing together healthcare professionals, community leaders, and policymakers to discuss strategies for improving health equity in urban areas.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Community Vaccination Drive</h3>
+                            <p class="event-date">May 22, 2024</p>
+                            <p>Partnered with local clinics to provide free vaccinations to underserved communities, reaching over 500 individuals in a single day.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Mental Health Awareness Week</h3>
+                            <p class="event-date">April 3-9, 2024</p>
+                            <p>A week-long series of events including panel discussions, workshops, and a community art project focused on destigmatizing mental health issues.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
 </body>
 </html>
