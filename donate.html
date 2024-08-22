@@ -1,63 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donate - EquityHeartBeats</title>
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/donate.css">
-  <link rel="stylesheet" href="css/footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to EquityHeartBeats - Support Health Equity</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/donate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <img src="images/logo.png" alt="EquityHeartBeats Logo">
-      </div>
-      <button class="nav-toggle">Menu</button>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="volunteer.html">Volunteer</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="donate.html">Donate</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
 
-  <section id="donate" class="donate">
-    <div class="container">
-      <h1>Support Our Cause</h1>
-      <p>Your donation can make a significant impact on our efforts to promote health equity.</p>
-      <div class="donation-options">
-        <div class="option">
-          <h2>One-Time Donation</h2>
-          <p>Make a one-time contribution to support our ongoing programs.</p>
-          <a href="#" class="cta-button">Donate Now</a>
-        </div>
-        <div class="option">
-          <h2>Monthly Donation</h2>
-          <p>Become a regular supporter and help us sustain our initiatives.</p>
-          <a href="#" class="cta-button">Donate Monthly</a>
-        </div>
-      </div>
-      <p>Your generosity will help us continue our mission of bridging the gaps in healthcare and creating a more equitable future for all.</p>
-    </div>
-  </section>
+    <main>
+        <section class="hero donate-hero">
+            <div class="container">
+                <h1>Support Our Mission</h1>
+                <p>Your donation can make a lasting impact on health equity worldwide.</p>
+            </div>
+        </section>
 
-  <footer>
-    <div class="container">
-      <ul class="social-links">
-        <li><a href="mailto:equityheartbeats@gmail.com">Email</a></li>
-        <li><a href="https://instagram.com/equityheartbeats" target="_blank">Instagram</a></li>
-      </ul>
-      <p>&copy; 2024 EquityHeartBeats. All Rights Reserved.</p>
-    </div>
-  </footer>
+        <section class="donor-appreciation">
+            <div class="container">
+                <h2>Our Heartfelt Thanks to Donors</h2>
+                <p>At EquityHeartBeats, we recognize that our donors are the lifeblood of our organization. Your generosity fuels our mission to promote health equity and bridge gaps in healthcare access. Every contribution, no matter the size, plays a crucial role in transforming lives and communities.</p>
+                <p>We are deeply grateful for your trust, support, and shared commitment to creating a world where everyone has equal access to quality healthcare. Your donations enable us to:</p>
+                <ul>
+                    <li>Provide essential health resources to underserved communities</li>
+                    <li>Conduct vital research on health disparities</li>
+                    <li>Implement educational programs to empower individuals and communities</li>
+                    <li>Advocate for policies that promote health equity</li>
+                </ul>
+                <p>Thank you for being a vital part of our journey towards a healthier, more equitable world.</p>
+            </div>
+        </section>
 
-  <script src="js/main.js"></script>
+        <section class="donation-options">
+            <div class="container">
+                <h2>Ways to Donate</h2>
+                <div class="donation-grid">
+                    <div class="donation-card">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <h3>One-Time Donation</h3>
+                        <p>Make an immediate impact with a one-time gift. Every dollar counts in our mission for health equity.</p>
+                        <a href="#donation-form" class="button">Donate Now</a>
+                    </div>
+                    <div class="donation-card">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>Monthly Giving</h3>
+                        <p>Become a sustaining donor and provide ongoing support to our programs and initiatives.</p>
+                        <a href="#donation-form" class="button">Set Up Monthly Donation</a>
+                    </div>
+                    <div class="donation-card">
+                        <i class="fas fa-building"></i>
+                        <h3>Corporate Partnerships</h3>
+                        <p>Align your company's values with our mission. Contact us to discuss partnership opportunities.</p>
+                        <a href="contact.html" class="button">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="donation-form" class="donation-form">
+            <div class="container">
+                <h2>Make Your Donation</h2>
+                <form id="donateForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Donation Amount ($)</label>
+                        <input type="number" id="amount" name="amount" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Donation Frequency</label>
+                        <select id="frequency" name="frequency" required>
+                            <option value="one-time">One-Time Donation</option>
+                            <option value="monthly">Monthly Donation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="button">Complete Donation</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="impact-stories">
+            <div class="container">
+                <h2>Your Impact</h2>
+                <div class="story-slider">
+                    <div class="story">
+                        <img src="images/impact-story-1.jpg" alt="Community Health Program">
+                        <h3>Community Health Program</h3>
+                        <p>"Thanks to donor support, we were able to launch a mobile health clinic that serves 5,000 individuals annually in rural areas."</p>
+                    </div>
+                    <div class="story">
+                        <img src="images/impact-story-2.jpg" alt="Health Education Initiative">
+                        <h3>Health Education Initiative</h3>
+                        <p>"Donations funded our health literacy program, empowering 10,000 people with knowledge to make informed health decisions."</p>
+                    </div>
+                    <div class="story">
+                        <img src="images/impact-story-3.jpg" alt="Policy Advocacy Success">
+                        <h3>Policy Advocacy Success</h3>
+                        <p>"With donor backing, our advocacy efforts led to the passage of a key health equity bill, impacting millions of lives."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/donate.js"></script>
 </body>
 </html>
